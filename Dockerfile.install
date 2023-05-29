@@ -1,0 +1,35 @@
+FROM pegasystems/pega-installer-ready:latest
+#FROM pega-docker.downloads.pega.com/platform/installer:8.8.0
+#ENV action=install-deploy
+#ENV ACTION=install-deploy
+COPY --chown=pegauser:root scripts /opt/pega/kit/scripts
+COPY --chown=pegauser:root archives /opt/pega/kit/archives
+COPY --chown=pegauser:root rules /opt/pega/kit/rules
+#COPY --chown=pegauser:root postgresql-42.3.7.jar /opt/pega
+#ENV POSTGRES_PASSWORD=password
+#ENV POSTGRES_DB=pega
+#ENV POSTGRES_PASSWORD=postgres 
+#ENV DB_USERNAME=postgres
+#ENV DB_PASSWORD=password
+#ENV DB_NAME=pega
+#ENV ADMIN_PASSWORD=admin
+#ENV DB_TYPE=postgres
+#ENV JBDC_CLASS=org.postgresql.Driver
+#RUN apt-get update && apt-get install wget -y
+#RUN wget -P /opt/pega https://jdbc.postgresql.org/download/postgresql-42.3.7.jar
+#ENV JBDC_DRIVER_URI=https://jdbc.postgresql.org/download/postgresql-42.3.7.jar
+#ENV PEGA.JBDC.DRIVER.JAR=/opt/pega/postgresql-42.3.7.jar 
+#ENV JDBC_URL=jdbc:postgresql://192.168.1.165:5433/pega
+#ENV JDBC_PATH=${CATALINA_HOME}/lib/postgresql-42.3.7.jar
+#/opt/pega/postgresql-42.3.7.jar
+
+#ENV JDBC_URL=/opt/pega/postgresql-42.3.7.jar 
+#ENV DB_TYPE=postgres JDBC_CLASS=org.postgresql.Driver DB_USERNAME=postgres DB_PASSWORD=password
+#ENV JDBC_DRIVER_URI=https://jdbc.postgresql.org/download/postgresql-42.3.7.jar
+#ENV JDBC_URL=jdbc:postgresql://192.168.1.165:5433/pega
+#ENV ADMIN_PASSWORD=admin
+#ENV RULES_SCHEMA=rule
+#ENV DATA_SCHEMA=data
+#ENV CUSTOMERDATA_SCHEMA=customer
+#ENV BYPASS_UDF_GENERATION=true
+

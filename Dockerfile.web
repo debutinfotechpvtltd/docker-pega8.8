@@ -1,0 +1,20 @@
+FROM pegasystems/pega-ready
+EXPOSE 8080
+COPY --chown=pegauser:root  archives/prweb.war ${CATALINA_HOME}/webapps/
+RUN chmod -R g+rw   ${CATALINA_HOME}/webapps/
+COPY --chown=pegauser:root postgresql-42.3.7.jar ${CATALINA_HOME}/lib/
+#ENV JDBC_URL=jdbc:postgresql://192.168.1.165:5433/pega
+#ENV JDBC_CLASS=org.postgresql.Driver
+#ENV DB_USERNAME=postgres
+#ENV DB_PASSWORD=password
+
+#ENV JDBC_URL=${CATALINA_HOME}/lib/postgresql-42.3.7.jar
+#ENV DB_TYPE=postgres 
+#JDBC_CLASS=org.postgresql.Driver DB_USERNAME=postgres DB_PASSWORD=password
+#ENV JDBC_DRIVER_URI=https://jdbc.postgresql.org/download/postgresql-42.3.7.jar
+#ENV JDBC_URL=jdbc:postgresql://192.168.1.165:5433/pega
+#ENV ADMIN_PASSWORD=admin
+#ENV RULES_SCHEMA=rule
+#ENV DATA_SCHEMA=data
+#ENV CUSTOMERDATA_SCHEMA=customer
+#ENV BYPASS_UDF_GENERATION=true

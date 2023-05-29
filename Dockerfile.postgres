@@ -1,0 +1,5 @@
+FROM postgres:12.5
+RUN echo "host all all all $POSTGRES_HOST_AUTH_METHOD" >> pg_hba.conf
+#ENV POSTGRES_PASSWORD=password
+#ENV POSTGRES_DB=pega
+#COPY psql.dump  /
