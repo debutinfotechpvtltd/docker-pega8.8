@@ -1,8 +1,8 @@
 # Here is some steps to configure Pega on docker.
 ## 1. Prequesisties to configure Pega8.8 on docker.
-  A. Docker should be intsalled on System
-  B. You should have all access to run Docker command on your system.
-  c. Port 5434 and 8080 should not occupied from any service.
+  1. Docker should be intsalled on System
+  2. You should have all access to run Docker command on your system.
+  3. Port 5434 and 8080 should not occupied from any service.
 ## 2.Installation
 
   1. Do git clone of this repo. 
