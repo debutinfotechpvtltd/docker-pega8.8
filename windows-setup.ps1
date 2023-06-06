@@ -1,5 +1,8 @@
-# Build and start the containers
+# Build and start the postgres container
 docker-compose up -d --build pega-postgres
+
+#Build and start the pgadmin Container
+docker-compose up -d --build pg-admin
 
 #Build and start the Installer Container
 docker-compose up -d --build pega-installer
