@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Pega-postgres",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "{DB_USERNAME}",
+            "Host": "{HOSTNAME}",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "{POSTGRES_DB}"
+        }
+    }
+}
