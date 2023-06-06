@@ -44,6 +44,23 @@ services:
     networks:
     - pega
 
+
+  pg-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile.pgadmin
+    container_name: pg-admin
+    image: pg-admin4:latest
+    env_file: '.env'
+    depends_on:
+      - pega-postgres
+    restart: unless-stopped
+    ports:
+    - 8081:80
+    networks:
+    - pega
+
+
 networks:
   pega:
     name: pega-network
