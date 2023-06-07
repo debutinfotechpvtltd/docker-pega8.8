@@ -22,5 +22,5 @@
 ## Note:- Pega-installer container will be exited state once everything configured which is expected and you can ignore it.
 
 ## License 
-This project is currently under development and is not yet licensed.
+This project is currently under MIT license.
 
