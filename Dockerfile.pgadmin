@@ -1,5 +1,5 @@
 FROM dpage/pgadmin4:latest
-COPY --chown=pgadmin:root .env-pgadmin ./.env
+COPY --chown=pgadmin:root .env ./.env
 COPY --chown=pgadmin:root servers.json ./
 COPY --chown=pgadmin:root servers1.json ./
 COPY --chown=pgadmin:root convert.py ./
