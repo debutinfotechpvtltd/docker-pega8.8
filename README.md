@@ -18,7 +18,7 @@
   8. Once pega-web container up. You can access pega application with the url "http://127.0.0.1:8080/prweb"
   9. You can access Pgadmin on browser with the url "http://127.0.0.1:8081"
 
-## Note:- Pega-installer container will be exited state once everything configure which is expected and you can ignore it.
+## Note:- Pega-installer container will be exited state once everything configured which is expected and you can ignore it.
 
 ## License 
 This project is currently under development and is not yet licensed.
