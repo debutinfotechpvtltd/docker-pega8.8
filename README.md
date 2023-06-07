@@ -2,7 +2,7 @@
 ## 1. Prequesisties to configure Pega8.8 on docker.
   1. Docker should be intsalled on System
   2. You should have all access to run Docker command on your system.
-  3. Port 5434 and 8080 should not occupied from any service.
+  3. Port 5434,8081 and 8080 should not occupied from any service.
 ## 2.Installation
 
   1. Do git clone of this repo. 
@@ -16,6 +16,7 @@
   6. Wait for 40 minutes to configure everthing.
   7. Check Docker conatiner status with the command "docker ps -a"
   8. Once pega-web container up. You can access pega application with the url "http://127.0.0.1:8080/prweb"
+  9. You can access Pgadmin on browser with the url "http://127.0.0.1:8081"
 
 ## Note:- Pega-installer container will be exited state once everything configure which is expected and you can ignore it.
 
