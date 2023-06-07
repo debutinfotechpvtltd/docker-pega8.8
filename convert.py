@@ -30,5 +30,5 @@ data['Servers']['1']['Host'] = os.environ.get('HOSTNAME')
 data['Servers']['1']['MaintenanceDB'] = os.environ.get('POSTGRES_DB')
 
 # Write the substituted JSON to a new file
-with open('/pgadmin4/servers1.json', 'w') as file:
+with open('/pgadmin4/servers.json', 'w') as file:
     json.dump(data, file, indent=2)
